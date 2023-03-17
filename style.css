@@ -1,0 +1,89 @@
+
+#intro {
+    font-family: sans-serif;
+    color: red;
+text-align: center;
+margin: 50px 0px 0px 0px;
+
+}
+#select{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    font-family: sans-serif;
+
+}
+		#title {
+			font-family: sans-serif;
+			text-align: center;
+            color: rgb(48, 89, 159);
+		}
+		h1 {
+			font-size: 48px;
+			margin-bottom: 30px;
+            margin-top: 20px;
+		}
+		button {
+           
+            width: 220px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            color: rgb(56, 73, 102);
+			font-size: 20px;
+			padding: 10px 10px;
+			margin: 20px;
+			border: none;
+			border-radius: 5px;
+			background-color: #c4afaf;
+			cursor: pointer;
+            border: none;
+            justify-content: center;
+		}
+
+        button:active {
+            background-color: red;
+          }
+		
+		#result {
+			font-size: 32px;
+			margin-top: 10px;
+		}
+	
+        main  {
+        text-align: center;
+        }
+
+        .pics {
+           width: 200px;
+             height: 190px;
+             margin-bottom: 10px;
+        }
+      
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+
+        }
+
+        #result {
+            text-align: center;
+            margin: 0px 0px 10px 0px;
+            font-family: sans-serif;
+
+        }
+
+        #compy{
+
+            text-align: center;
+            margin: 0px 0px 10px 0px;
+            font-family: sans-serif;
+            font-size: 25px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        
