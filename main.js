@@ -6,16 +6,16 @@ var compy = document.getElementById("compy");
 
 //below is code which uses an event listener to communicate with the buttons in the html with the 
 //relevant tags. in the body of the event listener function the play function is given the relevant player choice argument.
-// style.background colour is also triggered when button is clicked to change the color of the button to indicate a choice.
+// button:active in the style.css is also triggered when button is clicked to change the color of the button to indicate a choice.
 document.getElementById("rock"). addEventListener("click", function() {
-	play("rock");style.backgroundColor;
+	play("rock");
 });
 
 document.getElementById("paper").addEventListener("click", function() {
-	play("paper");style.backgroundColor;
+	play("paper");
 });
 document.getElementById("scissors").addEventListener("click", function() {
-	play("scissors");style.backgroundColor;
+	play("scissors");
 });
 
 
@@ -50,6 +50,7 @@ function play(playerChoice) {
 
 }
 
-
+console.log(result)
+console.log(compy)
 
 
