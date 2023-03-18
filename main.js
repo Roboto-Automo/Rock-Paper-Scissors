@@ -13,10 +13,11 @@ function preventLink(event) {
     window.location.href = "game.html";
 }
 
+nommo.innerHTML = playerName
 
 function play(playerChoice) {
 	
-
+ 
 
 	// the code below assigns an array to the variable computerChoice. The array calls a random value each time.
 	let computerChoice = choices[Math.floor(Math.random() * choices.length)];
