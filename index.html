@@ -11,11 +11,17 @@
    
     <h1>Rock: Paper: Scissors</h1>
    
-    <form>
-      <label for="text-input">Please enter your name:</label>
-      <input type="text" id="text-input">
-      <br>
-      <button type="submit" onclick="storeInput()">Let's Play!</button>
+   
+    <form onsubmit="storeInput(event)">
+        <label for="userInput">Please enter your name:</label>
+        <input type="text" id="userInput" name="userInput" required>
+        <button type="submit">Play</button>
     </form>
+    
+    <script src="intro.js"></script>
+
+    
+    
+
 </body>
 </html>

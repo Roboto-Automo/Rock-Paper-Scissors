@@ -52,5 +52,3 @@ function play(playerChoice) {
 
 console.log(result)
 console.log(compy)
-
-
