@@ -11,17 +11,19 @@
    
     <h1>Rock: Paper: Scissors</h1>
    
-   
-    <form onsubmit="storeInput(event)">
+
+    <form onsubmit="preventLink(event)">
         <label for="userInput">Please enter your name:</label>
-        <input type="text" id="userInput" name="userInput" required>
-        <button type="submit">Play</button>
+        <input type="text" id="userInput" required>
+        <button type="submit" onclick="preventLink(event)">Play</button>
     </form>
     
-    <script src="intro.js"></script>
-
+    <script src="main.js"></script>
+  
+        
+       
     
-    
+        
 
 </body>
 </html>

@@ -1,28 +1,23 @@
 // Define variables
 var choices = ["rock", "paper", "scissors"];
-var result = document.getElementById("result");
-var compy = document.getElementById("compy");
+//var result = document.getElementById("result");
+//var compy = document.getElementById("compy");
 
+var playerName = localStorage.getItem("playerName");
+console.log(playerName);
 
-//below is code which uses an event listener to communicate with the buttons in the html with the 
-//relevant tags. in the body of the event listener function the play function is given the relevant player choice argument.
-// button:active in the style.css is also triggered when button is clicked to change the color of the button to indicate a choice.
-document.getElementById("rock"). addEventListener("click", function() {
-	play("rock");
-});
-
-document.getElementById("paper").addEventListener("click", function() {
-	play("paper");
-});
-document.getElementById("scissors").addEventListener("click", function() {
-	play("scissors");
-});
-
-
+function preventLink(event) {
+    event.preventDefault();
+    var nameField = document.getElementById("userInput").value;
+    localStorage.setItem("playerName", nameField);
+    window.location.href = "game.html";
+}
 
 
 function play(playerChoice) {
 	
+
+
 	// the code below assigns an array to the variable computerChoice. The array calls a random value each time.
 	let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 	
@@ -48,7 +43,23 @@ function play(playerChoice) {
 		compy.innerHTML = "Computer picks Scissors!"
 	}
 
+
 }
 
-console.log(result)
-console.log(compy)
+
+//below is code which uses an event listener to communicate with the buttons in the html with the 
+//relevant tags. in the body of the event listener function the play function is given the relevant player choice argument.
+// button:active in the style.css is also triggered when button is clicked to change the color of the button to indicate a choice.
+
+
+
+document.getElementById("rock"). addEventListener("click", function() {
+	play("rock"); 
+});
+
+document.getElementById("paper").addEventListener("click", function() {
+	play("paper");
+});
+document.getElementById("scissors").addEventListener("click", function() {
+	play("scissors");
+});
