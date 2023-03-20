@@ -1,5 +1,5 @@
 // Define variables
-var choices = ["rock", "paper", "scissors"];
+var choices = ["rock", "paper", "scissors", "lizard", "spock"];
 //var result = document.getElementById("result");
 //var compy = document.getElementById("compy");
 
@@ -33,9 +33,20 @@ function play(playerChoice) {
 		result.innerHTML = "Man and Machine are as one!";
 	} else if ((playerChoice === "rock" && computerChoice === "scissors") || 
 			   (playerChoice === "paper" && computerChoice === "rock") || 
-			   (playerChoice === "scissors" && computerChoice === "paper")) {
+			   (playerChoice === "spock" && computerChoice === "scissors") ||
+			   (playerChoice === "spock" && computerChoice === "rock") ||
+			   (playerChoice === "lizard" && computerChoice === "spock") ||
+			   (playerChoice === "lizard" && computerChoice === "paper")
+			   ) {
 		result.innerHTML = "You win Nob Head!";
-	} else {
+			   } else if ((playerChoice === "spock" && computerChoice === "paper") || 
+			(playerChoice === "spock" && computerChoice === "lizard")){
+			     result.innerHTML = "Don't grieve, Admiral. It is logical. The needs of the many outweigh...the needs of one..."
+				}else if (playerChoice === "cage"){
+					computerChoice = "enrage"
+					result.innerHTML = "How dare you!"
+					}
+	 else {
 		result.innerHTML = "How could you let a machine beat you?!! YOU FILTHY APE!!";
 	}
 	
@@ -47,6 +58,12 @@ function play(playerChoice) {
 		compy.innerHTML = "Computer picks Paper!"
 	}else if (computerChoice === "scissors"){
 		compy.innerHTML = "Computer picks Scissors!"
+	}else if (computerChoice === "spock"){
+		compy.innerHTML = "Computer picks Spock!"
+	}else if (computerChoice === "lizard"){
+		compy.innerHTML = "Computer picks Lizard!"
+	}else if (computerChoice === "enrage"){
+		compy.innerHTML = "Con air was no good!"
 	}
 
 
@@ -68,4 +85,14 @@ document.getElementById("paper").addEventListener("click", function() {
 });
 document.getElementById("scissors").addEventListener("click", function() {
 	play("scissors");
+});
+document.getElementById("spock"). addEventListener("click", function() {
+	play("spock"); 
+});
+
+document.getElementById("lizard").addEventListener("click", function() {
+	play("lizard");
+});
+document.getElementById("cage").addEventListener("click", function() {
+	play("cage");
 });
