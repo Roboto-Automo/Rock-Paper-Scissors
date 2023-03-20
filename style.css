@@ -3,7 +3,7 @@
     font-family: sans-serif;
     color: red;
 text-align: center;
-margin: 50px 0px 0px 0px;
+margin: 40px 0px 0px 0px;
 
 }
 #select{
@@ -20,7 +20,7 @@ margin: 50px 0px 0px 0px;
 		h1 {
 			font-size: 48px;
 			margin-bottom: 30px;
-            margin-top: 20px;
+            margin-top: 10px;
 		}
 		button {
            
@@ -32,7 +32,7 @@ margin: 50px 0px 0px 0px;
             color: rgb(56, 73, 102);
 			font-size: 20px;
 			padding: 10px 10px;
-			margin: 20px;
+			margin: 3px;
 			border: none;
 			border-radius: 5px;
 			background-color: #c4afaf;
@@ -72,7 +72,7 @@ margin: 50px 0px 0px 0px;
 
         #result {
             text-align: center;
-            margin: 0px 0px 10px 0px;
+            margin: 0px 0px 20px 0px;
             font-family: sans-serif;
 
         }
@@ -84,6 +84,6 @@ margin: 50px 0px 0px 0px;
             font-family: sans-serif;
             font-size: 25px;
             margin-bottom: 40px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
         
