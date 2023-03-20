@@ -4,7 +4,12 @@ var choices = ["rock", "paper", "scissors"];
 //var compy = document.getElementById("compy");
 
 var playerName = localStorage.getItem("playerName");
-console.log(playerName);
+
+
+// intro text with Player Name interpolated into it
+let introText = document.createElement("p")
+	 introText.textContent = `Welcome ${playerName}, to this magical game of...`
+	document.getElementById("intro").appendChild(introText) 
 
 function preventLink(event) {
     event.preventDefault();
@@ -13,12 +18,12 @@ function preventLink(event) {
     window.location.href = "game.html";
 }
 
-nommo.innerHTML = playerName
+
 
 function play(playerChoice) {
 	
- 
-
+	
+   
 	// the code below assigns an array to the variable computerChoice. The array calls a random value each time.
 	let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 	
