@@ -56,7 +56,7 @@ function play(playerChoice) {
 					rageCount++
 					result.innerHTML = cageReact[rageCount]
 					 if (rageCount === 4){
-						window.location = "index.html";
+						window.location = "cagerage.html";
 					}
 					}
 	 else {
