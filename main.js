@@ -6,9 +6,9 @@ var choices = ["rock", "paper", "scissors", "lizard", "spock"];
 var playerName = localStorage.getItem("playerName");
 var cageEnrage = ["Con Air Was Too Cheesy!", "You Overacted in The Wicker Man!",
 "You'll never be as good as John Travolta!", "National Treasure...More like Abortional Displeasure!", 
-"You're only famous because you're Francis Ford Coppolla's nephew! " ]
+"You're only famous because you're Francis Ford Coppolla's nephew!", "oh no!" ]
 var cageReact = ["How dare you!", "Not the beeeees!", "I'm gonna take your face OFF!", "I'm Nicolas FRIGGIN' Cage!",
- "AAAAAAAAAAH!"]
+ "AAAAAAAAAAH!", "AAAHGGAAHAHAHAHAHAHA!!!!!"]
 
 
 var rageCount = -1
@@ -55,7 +55,7 @@ function play(playerChoice) {
 					computerChoice = "enrage"
 					rageCount++
 					result.innerHTML = cageReact[rageCount]
-					 if (rageCount === 4){
+					 if (rageCount === 5){
 						window.location = "cagerage.html";
 					}
 					}
