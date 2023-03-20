@@ -4,7 +4,14 @@ var choices = ["rock", "paper", "scissors", "lizard", "spock"];
 //var compy = document.getElementById("compy");
 
 var playerName = localStorage.getItem("playerName");
+var cageEnrage = ["Con Air Was Too Cheesy!", "You Overacted in The Wicker Man!",
+"You'll never be as good as John Travolta!", "National Treasure...More like Abortional Displeasure!", 
+"You're only famous because you're Francis Ford Coppolla's nephew! " ]
+var cageReact = ["How dare you!", "Not the beeeees!", "I'm gonna take your face OFF!", "I'm Nicolas FRIGGIN' Cage!",
+ "AAAAAAAAAAH!"]
 
+
+var rageCount = -1
 
 // intro text with Player Name interpolated into it
 let introText = document.createElement("p")
@@ -42,9 +49,15 @@ function play(playerChoice) {
 			   } else if ((playerChoice === "spock" && computerChoice === "paper") || 
 			(playerChoice === "spock" && computerChoice === "lizard")){
 			     result.innerHTML = "Don't grieve, Admiral. It is logical. The needs of the many outweigh...the needs of one..."
-				}else if (playerChoice === "cage"){
+				}
+				//cage rage player choice logic
+				else if (playerChoice === "cage"){
 					computerChoice = "enrage"
-					result.innerHTML = "How dare you!"
+					rageCount++
+					result.innerHTML = cageReact[rageCount]
+					 if (rageCount === 4){
+						window.location = "index.html";
+					}
 					}
 	 else {
 		result.innerHTML = "How could you let a machine beat you?!! YOU FILTHY APE!!";
@@ -62,8 +75,9 @@ function play(playerChoice) {
 		compy.innerHTML = "Computer picks Spock!"
 	}else if (computerChoice === "lizard"){
 		compy.innerHTML = "Computer picks Lizard!"
+		//cage rage computer choice logic picking item in array based on rageCount
 	}else if (computerChoice === "enrage"){
-		compy.innerHTML = "Con air was no good!"
+		compy.innerHTML = cageEnrage[rageCount]
 	}
 
 
