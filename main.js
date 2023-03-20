@@ -58,6 +58,9 @@ function play(playerChoice) {
 					 if (rageCount === 5){
 						window.location = "cagerage.html";
 					}
+					if (rageCount === 6){
+						count = 0
+					}
 					}
 	 else {
 		result.innerHTML = "How could you let a machine beat you?!! YOU FILTHY APE!!";
