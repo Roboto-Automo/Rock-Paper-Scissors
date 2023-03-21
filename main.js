@@ -5,6 +5,8 @@ let computerScore = 0;
 
 
 var playerName = localStorage.getItem("playerName");
+let nameInsert = document.getElementById("nameInsert");
+nameInsert.innerHTML = `${playerName} Score: ${playerScore}`
 var cageEnrage = ["Con Air Was Too Cheesy!", "You Overacted in The Wicker Man!",
 "You'll never be as good as John Travolta!", "National Treasure...More like Abortional Displeasure!", 
 "You're only famous because you're Francis Ford Coppolla's nephew!", "oh no!" ]
@@ -89,10 +91,11 @@ function play(playerChoice) {
 		compy.innerHTML = cageEnrage[rageCount]
 	}
 	
-	let scoreupdate = document.querySelector('#playerScore');
+	
 	let scoreupdate2 = document.querySelector('#computerScore');
- 
-	  scoreupdate.innerHTML = playerScore;
+	
+	  
+	nameInsert.innerHTML = `${playerName} Score: ${playerScore}`
 	 scoreupdate2.innerHTML = computerScore;
 
 }
