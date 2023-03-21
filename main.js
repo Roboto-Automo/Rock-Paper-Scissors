@@ -14,9 +14,10 @@ var cageReact = ["How dare you!", "Not the beeeees!", "I'm gonna take your face 
 var rageCount = -1
 
 // intro text with Player Name interpolated into it
-let introText = document.createElement("p")
-	 introText.textContent = `Welcome ${playerName}, to this magical game of...`
-	document.getElementById("intro").appendChild(introText) 
+//let introText = document.createElement("p")
+	// introText.textContent = `Welcome ${playerName}, to this magical game of...`
+	intro.innerHTML = `Welcome ${playerName}, to this magical game of...`
+	//document.getElementById("intro").appendChild(introText) 
 
 function preventLink(event) {
     event.preventDefault();
