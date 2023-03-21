@@ -1,16 +1,29 @@
 
+/*make background colour */
+body {
+    background-color: #677b9244;
+    /*make background colour gradient */
+    background-image: linear-gradient(315deg, #efe6ea 30%, #9aa5b4 74%);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
 #intro {
     font-family: sans-serif;
-    color: red;
+    color: rgb(59, 59, 100);
 text-align: center;
-margin: 30px 0px -30px 0px;
+margin: 30px 0px -40px 0px;
 
 }
 #select{
     text-align: center;
     margin: 0px 0px 10px 0px;
     font-family: sans-serif;
-
+    font-size: 25px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(48, 89, 159);
+    /*make the border sides come closer to the text*/
+    padding: 0px 5px;
 }
 		#title {
 			font-family: sans-serif;
@@ -18,9 +31,16 @@ margin: 30px 0px -30px 0px;
             color: rgb(48, 89, 159);
 		}
 		h1 {
-			font-size: 48px;
+			font-size: 28px;
 			margin-bottom: 30px;
             margin-top: 10px;
+            background-color: #d7dae76c;
+
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);         
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            
+            
+            
 		}
 		button {
            
@@ -35,11 +55,20 @@ margin: 30px 0px -30px 0px;
 			margin: 3px;
 			border: none;
 			border-radius: 5px;
-			background-color: #c4afaf;
+			background-color: #afb6c4;
 			cursor: pointer;
             border: none;
             justify-content: center;
+            /*make a black line around the border*/
+            border: 1px solid rgb(48, 89, 159);
 		}
+        .pics:hover {
+            transform: scale(1.1);
+            transition: 0.1s;
+            /*border transparent 1px;*/
+            
+
+          }
 
         button:active {
             background-color: red;
@@ -91,14 +120,50 @@ margin: 30px 0px -30px 0px;
         #score{
             text-align: center;
             font-family: sans-serif;
-            font-size: 15px;
+            font-size: 10px;
             margin-top: 10px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-           
+           background-color: #bfc4d3de;
             justify-content: space-between;
-           
+           /*make each line of text move away from the edge of the background colour box by 5 px*/
+              padding: 0px 5px;
+
         
+        }
+
+
+        #result-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #bfc4d3de;
+            /*make each line of text move away from the edge of the background colour box by 5 px*/
+            padding: 0px 5px;
+            /*make a black line around the border*/
+            border: 1px solid rgb(48, 89, 159);
+            /*make the border sides come closer to the text*/
+            padding: 0px 5px;
+        }
+
+        #battle {
+            text-align: center;
+            margin: 0px 0px 10px 0px;
+            font-family: sans-serif;
+            font-size: 25px;
+            margin-bottom: 50px;
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
         }

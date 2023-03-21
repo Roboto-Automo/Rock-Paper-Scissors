@@ -1,7 +1,8 @@
 // Define variables
 var choices = ["rock", "paper", "scissors", "lizard", "spock"];
-//var result = document.getElementById("result");
-//var compy = document.getElementById("compy");
+let playerScore = 0;
+let computerScore = 0;
+
 
 var playerName = localStorage.getItem("playerName");
 var cageEnrage = ["Con Air Was Too Cheesy!", "You Overacted in The Wicker Man!",
@@ -46,9 +47,12 @@ function play(playerChoice) {
 			   (playerChoice === "lizard" && computerChoice === "spock") ||
 			   (playerChoice === "lizard" && computerChoice === "paper")
 			   ) {
-		result.innerHTML = "You win Nob Head!";
+		result.innerHTML = "You have chosen wisely!";
+		playerScore++;
+		
 			   } else if ((playerChoice === "spock" && computerChoice === "paper") || 
 			(playerChoice === "spock" && computerChoice === "lizard")){
+				computerScore++;
 			     result.innerHTML = "Don't grieve, Admiral. It is logical. The needs of the many outweigh...the needs of one..."
 				}
 				//cage rage player choice logic
@@ -64,6 +68,7 @@ function play(playerChoice) {
 					}
 					}
 	 else {
+		computerScore++;
 		result.innerHTML = "How could you let a machine beat you?!! YOU FILTHY APE!!";
 	}
 	
@@ -83,7 +88,12 @@ function play(playerChoice) {
 	}else if (computerChoice === "enrage"){
 		compy.innerHTML = cageEnrage[rageCount]
 	}
-
+	
+	let scoreupdate = document.querySelector('#playerScore');
+	let scoreupdate2 = document.querySelector('#computerScore');
+ 
+	  scoreupdate.innerHTML = playerScore;
+	 scoreupdate2.innerHTML = computerScore;
 
 }
 
@@ -92,25 +102,25 @@ function play(playerChoice) {
 //relevant tags. in the body of the event listener function the play function is given the relevant player choice argument.
 // button:active in the style.css is also triggered when button is clicked to change the color of the button to indicate a choice.
 
-
+const myParagraph = document.querySelector('#battle');
 
 document.getElementById("rock"). addEventListener("click", function() {
-	play("rock"); 
+	play("rock"); battle.style.display = 'none';
 });
 
 document.getElementById("paper").addEventListener("click", function() {
-	play("paper");
+	play("paper");battle.style.display = 'none';
 });
 document.getElementById("scissors").addEventListener("click", function() {
-	play("scissors");
+	play("scissors");battle.style.display = 'none';
 });
 document.getElementById("spock"). addEventListener("click", function() {
-	play("spock"); 
+	play("spock"); battle.style.display = 'none';
 });
 
 document.getElementById("lizard").addEventListener("click", function() {
-	play("lizard");
+	play("lizard");battle.style.display = 'none';
 });
 document.getElementById("cage").addEventListener("click", function() {
-	play("cage");
+	play("cage");battle.style.display = 'none';
 });
