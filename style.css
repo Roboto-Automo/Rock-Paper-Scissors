@@ -3,7 +3,7 @@
     font-family: sans-serif;
     color: red;
 text-align: center;
-margin: 40px 0px 0px 0px;
+margin: 30px 0px -30px 0px;
 
 }
 #select{
@@ -67,7 +67,7 @@ margin: 40px 0px 0px 0px;
             align-items: center;
             max-width: 800px;
             margin: 0 auto;
-
+            
         }
 
         #result {
@@ -87,20 +87,18 @@ margin: 40px 0px 0px 0px;
             margin-top: 30px;
         }
         
-        /*style score*/
+      
         #score{
             text-align: center;
-            margin: 0px 0px 10px 0px;
             font-family: sans-serif;
             font-size: 15px;
-            margin-bottom: 40px;
-            margin-top: 30px;
-            /*make appear next to each other*/
+            margin-top: 10px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            /*space between each other*/
+           
             justify-content: space-between;
+           
         
         }
