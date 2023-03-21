@@ -19,7 +19,7 @@ margin: 30px 0px -40px 0px;
     text-align: center;
     margin: 0px 0px 10px 0px;
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 45px;
     margin-bottom: 30px;
     border: 1px solid rgb(48, 89, 159);
     /*make the border sides come closer to the text*/
@@ -35,17 +35,14 @@ margin: 30px 0px -40px 0px;
 			margin-bottom: 30px;
             margin-top: 10px;
             background-color: #d7dae76c;
-
             text-shadow: 0 2px 5px rgba(0,0,0,0.2);         
             box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             
-            
-            
 		}
 
-       
-
 		button {
+            /*make buttons proportionally smaller*/
+            
             width: 220px;
             display: flex;
             flex-direction: column;
@@ -64,6 +61,12 @@ margin: 30px 0px -40px 0px;
             /*make a black line around the border*/
             border: 1px solid rgb(48, 89, 159);
 		}
+
+        .pics {
+            width: 200px;
+              height: 190px;
+              margin-bottom: 10px;
+         }
         .pics:hover {
             transform: scale(1.1);
             transition: 0.1s;
@@ -85,11 +88,7 @@ margin: 30px 0px -40px 0px;
         text-align: center;
         }
 
-        .pics {
-           width: 200px;
-             height: 190px;
-             margin-bottom: 10px;
-        }
+      
       
         .container {
             display: flex;
@@ -159,7 +158,7 @@ margin: 30px 0px -40px 0px;
             text-align: center;
             margin: 0px 0px 10px 0px;
             font-family: sans-serif;
-            font-size: 25px;
+            font-size: 45px;
             margin-bottom: 50px;
             margin-top: 0px;
             display: flex;
